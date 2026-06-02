@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean Scan — The Blue Ocean</title>
+<meta name="description" content="Book a free 30-minute Ocean Scan. We'll apply one game-theory model to your market.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="The Blue Ocean home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0A2F44"/><path d="M14 44h36l-5 7H19z" fill="#6AB0DE"/><path d="M32 12v26" stroke="#FFF8E1" stroke-width="2" stroke-linecap="round"/><path d="M32 14l13 22H32z" fill="#1E88E5"/><path d="M32 16L21 36h11z" fill="#EFF7FF"/></svg>
+      The Blue Ocean
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="contact.html" aria-current="page">Ocean Scan</a></li>
+      <li><a class="btn btn-primary nav-cta" href="contact.html">Chart your course</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="block" style="padding-top:3.4rem;">
+  <div class="wrap" style="display:grid; gap:2.4rem; align-items:start;">
+    <div style="display:grid; gap:2.4rem;" class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Free 30-min Ocean Scan</span>
+        <h1 style="font-size:clamp(2.1rem,4.4vw,3.3rem); margin:1rem 0;">Chart your course.</h1>
+        <p style="color:var(--deep-70); font-size:1.12rem; max-width:46ch;">Tell us your biggest competitive pain point. We'll apply one game-theory model to your market and return a single move you can make — no obligation, no pitch theatre.</p>
+        <div style="margin-top:1.8rem;">
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h12v15H4z"/><path d="M16 5h4v15h-4"/><path d="M7 9h6M7 13h6"/></svg>
+            Powered by 200+ peer-reviewed papers
+          </span>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="ocean-scan-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Company name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+          </div>
+          <div class="field">
+            <label for="pain">Biggest competitive pain point</label>
+            <textarea id="pain" name="pain" required placeholder="Where is the water reddest for you right now?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">Request my Ocean Scan</button>
+          <p class="form-note">We reply within two business days. Your details stay with us — empirically derived discretion.</p>
+          <div class="form-success" id="form-success" role="status">
+            Thank you — your request is in. We'll be in touch within two business days to schedule your Ocean Scan.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0A2F44"/><path d="M14 44h36l-5 7H19z" fill="#6AB0DE"/><path d="M32 12v26" stroke="#FFF8E1" stroke-width="2" stroke-linecap="round"/><path d="M32 14l13 22H32z" fill="#1E88E5"/><path d="M32 16L21 36h11z" fill="#EFF7FF"/></svg>
+        The Blue Ocean
+      </div>
+      <span class="footer-tag">Evidence-based blue oceans</span>
+      <ul class="footer-social">
+        <li><a href="#" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" rel="noopener">X</a></li>
+      </ul>
+    </div>
+    <div class="footer-line">Not just strategy &ndash; <strong>science.</strong></div>
+  </div>
+</footer>
+
+<svg class="boat-watermark" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 44h36l-5 7H19z" fill="currentColor"/><path d="M32 12v26" stroke="currentColor" stroke-width="2"/><path d="M32 14l13 22H32z" fill="currentColor"/></svg>
+
+<style>
+  @media(min-width:900px){ .contact-grid{ grid-template-columns:1fr 1fr; gap:3rem; align-items:start; } }
+</style>
+<script src="assets/script.js"></script>
+</body>
+</html>
